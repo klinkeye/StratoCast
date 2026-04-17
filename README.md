@@ -24,7 +24,7 @@ SR-Music remains the simpler, local-only option for a single operator — if tha
 <!-- Replace the path below with your diagram file once added to the repo.
      Suggested: save the architecture SVG as docs/architecture.svg -->
 
-![StratoCast architecture diagram](docs/architecture.svg)
+![StratoCast architecture diagram](docs/dcs_srs_streaming_architecture.svg)
 
 The system has three logical zones:
 
