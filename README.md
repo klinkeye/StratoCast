@@ -1,18 +1,18 @@
-# SRS-Broadcast
+# StratoCast
 
 > A client/server music and audio streaming platform for DCS World's Simple Radio Standalone (SRS).
 
-SRS-Broadcast lets authenticated remote clients stream music and audio into a DCS mission as SRS radio transmissions. A lightweight client app handles source selection, playlists, and encoding; a server-side relay — co-located with your DCS-SRS server — handles authentication, quotas, and injection of audio onto in-game frequencies.
+StratoCast lets authenticated remote clients stream music and audio into a DCS mission as SRS radio transmissions. A lightweight client app handles source selection, playlists, and encoding; a server-side relay — co-located with your DCS-SRS server — handles authentication, quotas, and injection of audio onto in-game frequencies.
 
-Think in-universe radio stations, mission-themed background music, GCI/AWACS roleplay ambience, or a "tower ATIS" frequency — all controllable remotely by authorized users without giving any of them the ability to flood the server.
+Think in-universe radio stations, mission-themed background music, GCI/AWACS roleplay ambience, or a "tower ATIS" frequency — all controllable remotely by authorised users without giving any of them the ability to flood the server.
 
 ## Acknowledgements
 
 This project is directly inspired by **[SR-Music](https://github.com/ace747/SR-Music)** by [ace747](https://github.com/ace747) — an open-source C# music client that pioneered the idea of broadcasting music into DCS over SRS. SR-Music works brilliantly as a local, SRS-admin-controlled music player with a fixed set of radio stations.
 
-SRS-Broadcast extends that core idea in a few key directions:
+StratoCast extends that core idea in a few key directions:
 
-- **Client/server model** — the audio source and the SRS injection point no longer have to live on the same machine. Authorized users can stream from their own PCs.
+- **Client/server model** — the audio source and the SRS injection point no longer have to live on the same machine. authorised users can stream from their own PCs.
 - **Authentication and quotas** — remote connections are explicitly supported, but protected behind per-user tokens, rate limits, and an admin kill switch, so the feature can't be weaponized as "musical DDoS."
 - **Broader source support** — local files across multiple formats (MP3, FLAC, OGG, WAV), with a path toward streaming services via `ytmusicapi` and the Spotify Web API.
 - **Unit-bound transmissions** (stretch goal) — read in-mission unit state via DCS Lua export hooks, the same approach [LotATC](https://www.lotatc.com/) uses, so transmissions can inherit line-of-sight and range propagation from a specific in-game unit.
@@ -24,7 +24,7 @@ SR-Music remains the simpler, local-only option for a single operator — if tha
 <!-- Replace the path below with your diagram file once added to the repo.
      Suggested: save the architecture SVG as docs/architecture.svg -->
 
-![SRS-Broadcast architecture diagram](docs/architecture.svg)
+![StratoCast architecture diagram](docs/architecture.svg)
 
 The system has three logical zones:
 
@@ -42,7 +42,7 @@ The system has three logical zones:
 - One active stream per authenticated user
 - Local file playback: MP3, FLAC, OGG, WAV
 - Direct injection into a single SRS frequency
-- Basic admin: list authorized users, revoke tokens
+- Basic admin: list authorised users, revoke tokens
 
 ### V1
 
@@ -162,4 +162,4 @@ TBD — likely GPL-3.0 to align with SR-Music and DCS-SimpleRadioStandalone's li
 
 ## Disclaimer
 
-SRS-Broadcast is not affiliated with Eagle Dynamics, Ciribob, or ace747. "DCS World" is a trademark of Eagle Dynamics SA.
+StratoCast is not affiliated with Eagle Dynamics, Ciribob, or ace747. "DCS World" is a trademark of Eagle Dynamics SA.
