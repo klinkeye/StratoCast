@@ -14,7 +14,7 @@ The whole idea here started with [SR-Music](https://github.com/ace747/SR-Music) 
 
 If one operator pushing music over SRS on a single box is all you need, go use SR-Music.
 
-## What it'll do
+## What StratoCast plans to do:
 
 MVP:
 
