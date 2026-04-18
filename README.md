@@ -65,11 +65,11 @@ When it runs, you'll need:
 
 Relay config will sit in a file next to the binary, probably TOML. Sections I'm planning:
 
-- `[server]` — bind address, TLS certs, SRS endpoint.
-- `[auth]` — token store, expiry, issuer.
-- `[quotas]` — concurrent stream and bitrate caps.
-- `[frequencies]` — allowlists and per-role rules.
-- `[admin]` — admin UI details.
+- `[server]` : bind address, TLS certs, SRS endpoint.
+- `[auth]` : token store, expiry, issuer.
+- `[quotas]` : concurrent stream and bitrate caps.
+- `[frequencies]` : allowlists and per-role rules.
+- `[admin]` : admin UI details.
 
 A sample config will ship with the first working release.
 
@@ -95,9 +95,9 @@ Leaning GPL-3.0 to match SR-Music and DCS-SimpleRadioStandalone. Not locked in y
 
 ## Credits
 
-- [SR-Music](https://github.com/ace747/SR-Music) by ace747 — the project that inspired this one.
-- [DCS-SimpleRadioStandalone](https://github.com/ciribob/DCS-SimpleRadioStandalone) by Ciribob — the whole reason any of this is possible.
-- [LotATC](https://www.lotatc.com/) — for showing how a third-party tool binds SRS transmissions to in-game units.
+- [SR-Music](https://github.com/ace747/SR-Music) by ace747 : the project that inspired this one.
+- [DCS-SimpleRadioStandalone](https://github.com/ciribob/DCS-SimpleRadioStandalone) by Ciribob : the whole reason any of this is possible.
+- [LotATC](https://www.lotatc.com/) : for showing how a third-party tool binds SRS transmissions to in-game units.
 
 ## Disclaimer
 
