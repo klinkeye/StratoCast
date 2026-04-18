@@ -91,7 +91,7 @@ A proper `CONTRIBUTING.md` and dev setup guide will land with the MVP.
 
 ## Licence
 
-![The Prosperity Public License 3.0.0](LICENSE.md)
+[The Prosperity Public License 3.0.0](LICENSE.md) : see this for the details.
 
 ## Credits
 
