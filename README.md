@@ -91,7 +91,7 @@ A proper `CONTRIBUTING.md` and dev setup guide will land with the MVP.
 
 ## Licence
 
-Leaning GPL-3.0 to match SR-Music and DCS-SimpleRadioStandalone. Not locked in yet.
+![The Prosperity Public License 3.0.0](License.md)
 
 ## Credits
 
